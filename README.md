@@ -1,6 +1,10 @@
 # AmazonIVSBroadcast Stages Workarounds
 
-This project provides a basic implementation of the `AmazonIVSBroadcast` SDK with `Stages` that shows all the bugs with have encountered during the iOS integration, how to reproduce them step by step, and all the workarounds we used.
+| | |
+|------|------|
+| <img src="./.screenshots/home.png" width=250> | <img src="./.screenshots/view.png" width=250> |
+
+This project provides a basic implementation of the `AmazonIVSBroadcast` SDK with `Stages` that shows all the bugs we have encountered during the iOS integration, how to reproduce them step by step, and all the workarounds we used.
 
 - No Microphone Sound
 - Low audio volume
@@ -21,8 +25,8 @@ let users: [User] = []
 Provide Viewer and Publisher tokens:
 ```swift
 let users: [User] = [
-  .init(name: "Viewer", token: "{{VIEWER_TOKEN}}"),
-  .init(name: "Publisher", token: "{{Publisher_TOKEN}}")
+ .init(name: "Viewer", token: "{{SUBSCRIBER_TOKEN}}"),
+ .init(name: "Publisher", token: "{{PUBLISHER_TOKEN}}")
 ]
 ```
 
@@ -41,7 +45,7 @@ The microphone authorization is not even requested.
 - Tap on `Connect Microphone`
 - Tap on `Start broadcasting`
 
-❌ No audio is received on the viewer side
+❌ No audio is received on the viewer's side
 
 #### How to workaround : 
 - Select the `Publisher No Microphone Sound` workaround on the first view
@@ -51,7 +55,7 @@ The microphone authorization is not even requested.
 - Tap on `Connect Microphone`
 - Tap on `Start broadcasting`
 
-✅ Audio is received on the viewer side
+✅ Audio is received on the viewer's side
 
 ### 📹 Video quality
 
@@ -66,7 +70,7 @@ The default configuration is used (15fps, 360x640).
 - Tap on `Connect Microphone`
 - Tap on `Start broadcasting`
 
-❌ The video quality is not applied on the viewer side
+❌ The video quality is not applied on the viewer's side
 
 #### How to workaround : 
 - Select the `Publisher Video Quality` workaround on the first view
@@ -76,7 +80,7 @@ The default configuration is used (15fps, 360x640).
 - Tap on `Connect Microphone`
 - Tap on `Start broadcasting`
 
-✅ The video quality is applied on the viewer side
+✅ The video quality is applied on the viewer's side
 
 #### How to workaround 2: 
 - Join the stage with a publisher token
