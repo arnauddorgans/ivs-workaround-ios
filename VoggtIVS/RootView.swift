@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RootView: View {
     @StateObject var viewModel: RootViewModel
-    @State var selectedWorkarounds: Set<Workaround> = Set(Workaround.allCases)
+    @State var selectedWorkarounds: Set<Workaround> = []
 
     var body: some View {
         NavigationStack {
