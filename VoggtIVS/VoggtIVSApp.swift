@@ -11,7 +11,7 @@ import SwiftUI
 struct VoggtIVSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView(viewModel: .init())
         }
     }
 }

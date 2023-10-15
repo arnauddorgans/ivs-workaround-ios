@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,13 @@
 		FEC88C552ADA049700BB0188 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC88C542ADA049700BB0188 /* ContentView.swift */; };
 		FEC88C572ADA049700BB0188 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEC88C562ADA049700BB0188 /* Assets.xcassets */; };
 		FEC88C5A2ADA049700BB0188 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEC88C592ADA049700BB0188 /* Preview Assets.xcassets */; };
+		FEC88C622ADA04D600BB0188 /* AmazonIVSBroadcast in Frameworks */ = {isa = PBXBuildFile; productRef = FEC88C612ADA04D600BB0188 /* AmazonIVSBroadcast */; };
+		FEC88C642ADA04E800BB0188 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC88C632ADA04E800BB0188 /* ViewModel.swift */; };
+		FEC88C672ADA057C00BB0188 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC88C662ADA057C00BB0188 /* User.swift */; };
+		FEC88C692ADA05A700BB0188 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC88C682ADA05A700BB0188 /* RootView.swift */; };
+		FEC88C6C2ADA0DF500BB0188 /* ImageDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC88C6B2ADA0DF500BB0188 /* ImageDeviceView.swift */; };
+		FEFF3E782ADC2A450014453D /* Workaround.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFF3E772ADC2A450014453D /* Workaround.swift */; };
+		FEFF3E7A2ADC50AE0014453D /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFF3E792ADC50AE0014453D /* RootViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,12 @@
 		FEC88C542ADA049700BB0188 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FEC88C562ADA049700BB0188 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEC88C592ADA049700BB0188 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FEC88C632ADA04E800BB0188 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		FEC88C662ADA057C00BB0188 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FEC88C682ADA05A700BB0188 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		FEC88C6B2ADA0DF500BB0188 /* ImageDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDeviceView.swift; sourceTree = "<group>"; };
+		FEFF3E772ADC2A450014453D /* Workaround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workaround.swift; sourceTree = "<group>"; };
+		FEFF3E792ADC50AE0014453D /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEC88C622ADA04D600BB0188 /* AmazonIVSBroadcast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +65,13 @@
 		FEC88C512ADA049700BB0188 /* VoggtIVS */ = {
 			isa = PBXGroup;
 			children = (
+				FEC88C652ADA057200BB0188 /* Models */,
+				FEC88C6A2ADA0DDF00BB0188 /* Views */,
 				FEC88C522ADA049700BB0188 /* VoggtIVSApp.swift */,
+				FEC88C682ADA05A700BB0188 /* RootView.swift */,
+				FEFF3E792ADC50AE0014453D /* RootViewModel.swift */,
 				FEC88C542ADA049700BB0188 /* ContentView.swift */,
+				FEC88C632ADA04E800BB0188 /* ViewModel.swift */,
 				FEC88C562ADA049700BB0188 /* Assets.xcassets */,
 				FEC88C582ADA049700BB0188 /* Preview Content */,
 			);
@@ -65,6 +84,23 @@
 				FEC88C592ADA049700BB0188 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FEC88C652ADA057200BB0188 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FEC88C662ADA057C00BB0188 /* User.swift */,
+				FEFF3E772ADC2A450014453D /* Workaround.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FEC88C6A2ADA0DDF00BB0188 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FEC88C6B2ADA0DF500BB0188 /* ImageDeviceView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +119,9 @@
 			dependencies = (
 			);
 			name = VoggtIVS;
+			packageProductDependencies = (
+				FEC88C612ADA04D600BB0188 /* AmazonIVSBroadcast */,
+			);
 			productName = VoggtIVS;
 			productReference = FEC88C4F2ADA049700BB0188 /* VoggtIVS.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +150,9 @@
 				Base,
 			);
 			mainGroup = FEC88C462ADA049700BB0188;
+			packageReferences = (
+				FEC88C602ADA04D600BB0188 /* XCLocalSwiftPackageReference "VoggtIVS/AmazonIVSBroadcast" */,
+			);
 			productRefGroup = FEC88C502ADA049700BB0188 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEC88C672ADA057C00BB0188 /* User.swift in Sources */,
 				FEC88C552ADA049700BB0188 /* ContentView.swift in Sources */,
+				FEC88C6C2ADA0DF500BB0188 /* ImageDeviceView.swift in Sources */,
+				FEC88C642ADA04E800BB0188 /* ViewModel.swift in Sources */,
 				FEC88C532ADA049700BB0188 /* VoggtIVSApp.swift in Sources */,
+				FEFF3E782ADC2A450014453D /* Workaround.swift in Sources */,
+				FEFF3E7A2ADC50AE0014453D /* RootViewModel.swift in Sources */,
+				FEC88C692ADA05A700BB0188 /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +323,8 @@
 				DEVELOPMENT_TEAM = UVZ96HMA25;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera debug";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Microphone debug";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +354,8 @@
 				DEVELOPMENT_TEAM = UVZ96HMA25;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera debug";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Microphone debug";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,6 +396,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		FEC88C602ADA04D600BB0188 /* XCLocalSwiftPackageReference "VoggtIVS/AmazonIVSBroadcast" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = VoggtIVS/AmazonIVSBroadcast;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FEC88C612ADA04D600BB0188 /* AmazonIVSBroadcast */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AmazonIVSBroadcast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FEC88C472ADA049700BB0188 /* Project object */;
 }
